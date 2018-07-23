@@ -84,6 +84,24 @@ bot.dialog('Help', session => {
     matches: 'Help'
 });
 
+bot.dialog('Create Database', session => {
+    session.endDialog(`Hi Meet! You asked me to create a database, I am on it!`);
+}).triggerAction({
+    matches: 'Create Database'
+});
+
+bot.dialog('Scale Database', session => {
+    session.endDialog(`Hi Meet! You asked me to scale a database, I am on it!`);
+}).triggerAction({
+    matches: 'Scale Database'
+});
+
+bot.dialog('Delete Database', session => {
+    session.endDialog(`Hi Meet! You asked me to delete a database, I am on it!`);
+}).triggerAction({
+    matches: 'Delete Database'
+});
+
 bot.dialog('ShowHotelsReviews', (session, args) => {
     // retrieve hotel name from matched entities
     const hotelEntity = builder.EntityRecognizer.findEntity(args.intent.entities, 'Hotel');
