@@ -87,7 +87,7 @@ bot.dialog('Create Database', session => {
 });
 
 bot.dialog('Help', session => {
-    session.endDialog(`Hi Meet! Try asking me things like 'search hotels in Seattle', 'search hotels near LAX airport' or 'show me the reviews of The Bot Resort'`);
+    session.endDialog(`Hi Meet!!! Try asking me things like 'search hotels in Seattle', 'search hotels near LAX airport' or 'show me the reviews of The Bot Resort'`);
 }).triggerAction({
     matches: 'Help'
 });
